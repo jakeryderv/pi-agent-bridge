@@ -1,0 +1,41 @@
+name: Feature request
+description: Propose a bounded bridge capability
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user outcome is missing?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Include acceptance criteria and what is out of scope.
+    validations:
+      required: true
+  - type: dropdown
+    id: boundary
+    attributes:
+      label: Primary architecture boundary
+      options:
+        [
+          Provider-neutral core,
+          Codex adapter,
+          Claude adapter,
+          Pi extension UX,
+          Packaging or lifecycle,
+          New provider,
+        ]
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Security, compatibility, and maintenance trade-offs
+      description: Consider permissions, auth, sessions, cancellation, PATH, filesystem, network, and protocol stability.
+    validations:
+      required: true

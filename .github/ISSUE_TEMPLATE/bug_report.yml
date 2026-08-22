@@ -1,0 +1,47 @@
+name: Bug report
+description: Report reproducible incorrect bridge behavior
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not report security vulnerabilities publicly; follow SECURITY.md.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Provider
+      options: [Codex, Claude, Core or Pi integration, Packaging or CI]
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: pi-agent-bridge, Pi, Node, and Codex/Claude SDK or CLI versions
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Minimal steps using redacted prompts/configuration. Never include credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Redact credentials, private paths, prompts, and repository content.
+      render: text
+  - type: textarea
+    id: security
+    attributes:
+      label: Permission and security context
+      description: Permission mode, cwd relationship, UI mode, cancellation state, and trust assumptions.
