@@ -64,10 +64,10 @@
     "prepack": "npm run clean && npm run build && npm run pack:check"
   },
   "dependencies": {
-    "@anthropic-ai/claude-agent-sdk": "^0.3.240",
-    "@anthropic-ai/sdk": "^0.120.0",
+    "@anthropic-ai/claude-agent-sdk": "^0.3.251",
+    "@anthropic-ai/sdk": "^0.122.0",
     "@modelcontextprotocol/sdk": "^1.30.0",
-    "zod": "^4.4.3"
+    "zod": "^4.5.4"
   },
   "peerDependencies": {
     "@earendil-works/pi-ai": "*",
